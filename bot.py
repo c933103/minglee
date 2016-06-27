@@ -28,7 +28,7 @@ async def on_message(message):
 
         for channel in server.channels:
             # Both cases are needed in order to handle PMs which won't have the
-            # id replacemeent
+            # id replacement
             if channel.id == channel_name[2:-1] or channel.name == channel_name[1:]:
                 allow = discord.Permissions.none()
                 deny = discord.Permissions.none()
